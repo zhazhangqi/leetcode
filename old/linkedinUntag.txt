@@ -1,0 +1,45 @@
+newstring = string1 + string1, has to assign to a variable
+list is a object, can not use = to copy, variable is just a pointer. [:]
+recursive need add self. before the function call
+
+1
+done	Onsite的时候碰到了一道新题，其他题都是tag题就不赘述了, system design 也是面经题， top k shared link。
+	新题: 替换substring。举个简单的例子：
+	input: String s1= "abbc", List<String>() ={"b", "bb"}, List<String>() {"def", "dfg"}
+	output: {"adefdefc", "adfgc"} 
+
+	当时让我按着这个做：s1= "abbabbbbababdf"，判断 b和bb是否是abbabbbbababdf的substring, 如果能找到b，把b替换成def。如果能找到bb, 替换成dfg。返回所以可能的组合，如何不包含substring，就返回abbabbbbababdf。
+
+	当时用dfs + memo做的，写的不太对。谁给写个正确的？多谢了啊
+
+2. SRE, https://instant.1point3acres.com/thread/152904, 
+	SD:	https://instant.1point3acres.com/thread/283890
+	SD summary: https://instant.1point3acres.com/thread/163613
+
+3. 输出公因数   lcd(x, y) if y==0, return x, else: lcd(y, x%y)
+
+done 4,round 6. 不知道这个白人哥们上哪找的一道题，直接把他的laptop给我看，是他在某个网站上找的一道题目： 就是一个binary search tree， 给你个 target ， 一个k, 然后让你找出距离这个target距离最近的K个element。（距离的定义就是binary tree里面value的值 到这个target的绝对值）。小哥人蛮好的， 基本在他的提示下， 写出了比较efficient的解法。
+
+5, implement hashtable 要求table 可以接受所有类型， T key, T value , 实现get put。处理冲突。在生成hashkey上面搞了好久。这个类型T好头疼。
+
+done 6,	离原点最近k个点 follow 不是原点。 写了个 getDistance() setDistance() 也不知道对不对，反正有点懵懵的 写完。
+好像都不是tag题 不过面经还是有看到。挺注意细节的，希望好结果，发个面经 祝大家都顺利。
+
+1. 实现一个replace all
+done 2. shuffle array 
+2. 给定数组[1,2,2,3,4], 输出其中只出现一次的元素
+
+382, 296, 265, 235, 200, 174, 160, 
+
+18th Jan， 设计一个hashtable的数据结构， 76，
+done, integer to roma, 
+done, replace string : 比如A = "aaaaa" B = "aa" C = "b" 答案可以是bba bab abb
+done, LC两个linked list，返回是否有intersection，考虑环；无环，原题；有一个环false；有两个环，
+	2pointers找到一个list的环内任意结点，另一个list也是这样，然后一个结点绕环走一圈看能不能遇到另一个结点。
+done, LC二叉树删除leaves直到为空
+
+done,LC数组能否分成k份使得没份的sum一样-> 698
+? MJ字符串匹配替换
+
+done 53, 152, 100, 141, 256
+  

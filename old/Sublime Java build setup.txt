@@ -1,0 +1,17 @@
+Sublime Java build setup
+
+1,Install Package Control if you have't already
+2,Using Package Control, install Package Resource Viewer
+3,Open Package Control, type prv and run PackageResourceViewer: Open Resource
+Select Java
+Select JavaC.sublime-build
+Replace the build JSON definition with the below code block exactly
+You're done! ctrl+b should now compile and run your Java file.
+Build JSON definition:
+
+{
+  "cmd": ["javac \"$file_name\" && java \"$file_base_name\""],
+  "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+  "selector": "source.java",
+  "shell": true
+}
